@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="hw1">
+        <df name="part1">
+          <in>main.cpp</in>
+          <in>part1.cpp</in>
+        </df>
+        <df name="part2">
+          <in>main.cpp</in>
+          <in>part2.cpp</in>
+        </df>
+        <df name="part3">
+          <in>main.cpp</in>
+          <in>part3.cpp</in>
+        </df>
+      </df>
+      <in>main.cpp</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-fPIC"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <folder path="0/hw1/part2">
+        <ccTool>
+          <incDir>
+            <pElem>hw1/part1</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="0/hw1/part3">
+        <ccTool>
+          <incDir>
+            <pElem>hw1/part1</pElem>
+            <pElem>hw1/part2</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <item path="hw1/part1/main.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>hw1/part1</pElem>
+            <pElem>hw1</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="hw1/part1/part1.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>hw1</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="hw1/part2/main.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>hw1/part2</pElem>
+            <pElem>hw1</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="hw1/part2/part2.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>hw1</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="hw1/part3/main.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>hw1/part3</pElem>
+            <pElem>hw1</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="hw1/part3/part3.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>hw1</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>hw1</pElem>
+            <pElem>hw1/include</pElem>
+            <pElem>hw1/part1</pElem>
+            <pElem>hw1/part2</pElem>
+            <pElem>hw1/part3</pElem>
+            <pElem>includes</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

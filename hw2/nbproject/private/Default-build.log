@@ -1,0 +1,33 @@
+g++ -Wall -g -I ./hw1 -I ./hw1/include -I ./hw1/part1 -I ./hw1/part2 -I ./hw1/part3 -I ./includes -c main.cpp -o main.o
+make -C hw1
+g++ -Wall -g -fPIC  -c part1/main.cpp -I./part1 -o main1.opp
+part1/main.cpp:13:15: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    for(int i : v){
+              ^
+1 warning generated.
+g++ -Wall -g -fPIC  -c part1/part1.cpp -o part1.opp
+g++ -o part1b part1.opp main1.opp 
+g++ -Wall -g -fPIC  -c part2/main.cpp -I./part1 -I./part2 -o main2.opp
+g++ -Wall -g -fPIC  -c part2/part2.cpp -I./part1 -o part2.opp
+part2/part2.cpp:6:14: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+    for(int i: v){
+             ^
+1 warning generated.
+g++ -o part2b part1.opp part2.opp main2.opp 
+g++ -Wall -g -fPIC  -c part3/main.cpp -I./part1 -I./part2 -I./part3 -o main3.opp
+g++ -Wall -g -fPIC  -c part3/part3.cpp -I./part1 -I./part2 -o part3.opp
+g++ -o part3b part1.opp part2.opp part3.opp main3.opp 
+rm main1.opp
+rm main2.opp
+rm main3.opp
+g++ -shared *.opp -o libhw1.so
+g++ -o hw2 main.o -L./hw1 -lhw1
+Undefined symbols for architecture x86_64:
+  "CameraImage::CameraImage(int, int)", referenced from:
+      _main in main.o
+  "vtable for CameraImage", referenced from:
+      CameraImage::~CameraImage() in main.o
+  NOTE: a missing vtable usually means the first non-inline virtual member function has no definition.
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [hw2] Error 1
